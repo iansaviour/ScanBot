@@ -157,6 +157,9 @@ Partial Class ScanBotMain
         Me.GridColumnID.Caption = "ID"
         Me.GridColumnID.FieldName = "id"
         Me.GridColumnID.Name = "GridColumnID"
+        Me.GridColumnID.Visible = True
+        Me.GridColumnID.VisibleIndex = 0
+        Me.GridColumnID.Width = 146
         '
         'GridColumnCodeList
         '
@@ -164,8 +167,8 @@ Partial Class ScanBotMain
         Me.GridColumnCodeList.FieldName = "code"
         Me.GridColumnCodeList.Name = "GridColumnCodeList"
         Me.GridColumnCodeList.Visible = True
-        Me.GridColumnCodeList.VisibleIndex = 0
-        Me.GridColumnCodeList.Width = 1378
+        Me.GridColumnCodeList.VisibleIndex = 1
+        Me.GridColumnCodeList.Width = 1253
         '
         'GridColumnCheckList
         '
@@ -177,8 +180,8 @@ Partial Class ScanBotMain
         Me.GridColumnCheckList.FieldName = "is_check"
         Me.GridColumnCheckList.Name = "GridColumnCheckList"
         Me.GridColumnCheckList.Visible = True
-        Me.GridColumnCheckList.VisibleIndex = 1
-        Me.GridColumnCheckList.Width = 254
+        Me.GridColumnCheckList.VisibleIndex = 2
+        Me.GridColumnCheckList.Width = 233
         '
         'ScanBotMain
         '

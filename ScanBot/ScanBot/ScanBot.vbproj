@@ -120,6 +120,9 @@
     <EmbeddedResource Include="ScanBotMain.resx">
       <DependentUpon>ScanBotMain.vb</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="code_import.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

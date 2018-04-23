@@ -111,6 +111,7 @@ Public Class ScanBotMain
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles BImportList.Click
         'import excel
         load_excel_data()
+
         '
         'Trial
         'Dim dt As New DataTable
@@ -164,11 +165,11 @@ Public Class ScanBotMain
         oledbconn.ConnectionString = strConn
         Dim MyCommand As OleDbDataAdapter
         Try
-            MyCommand = New OleDbDataAdapter("select [F1] as index,[F2] as code,'no' as is_check from [code$] WHERE NOT [F2] IS NULL", oledbconn)
+            MyCommand = New OleDbDataAdapter("select [F1] as id,[F2] as code,'no' as is_check from [code$] WHERE NOT [F2] IS NULL", oledbconn)
             MyCommand.Fill(data_temp)
             MyCommand.Dispose()
         Catch ex As Exception
-            MyCommand = New OleDbDataAdapter("select [F1] as index,[F2] as code,'no' as is_check from [code$] WHERE NOT [F2] IS NULL", oledbconn)
+            MyCommand = New OleDbDataAdapter("select [F1] as id,[F2] as code,'no' as is_check from [code$] WHERE NOT [F2] IS NULL", oledbconn)
             MyCommand.Fill(data_temp)
             MyCommand.Dispose()
         End Try
